@@ -24,7 +24,7 @@ function connect {
 
 while true
 do
-  connect front-end weaveworksdemos/front-end "secure internal external"
-  connect orders weaveworksdemos/orders "internal secure backoffice"
+  connect front-end haroldmei/front-end "secure internal external"
+  connect orders haroldmei/orders "internal secure backoffice"
   sleep 2
 done

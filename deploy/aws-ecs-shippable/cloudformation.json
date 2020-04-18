@@ -368,7 +368,7 @@
         "ContainerDefinitions": [
           {
             "Essential": true,
-            "Image": "weaveworksdemos/accounts",
+            "Image": "haroldmei/accounts",
             "Name": "accounts",
             "Memory": 512
           }
@@ -424,7 +424,7 @@
         "ContainerDefinitions": [
           {
             "Essential": true,
-            "Image": "weaveworksdemos/cart",
+            "Image": "haroldmei/cart",
             "Name": "cart",
             "Memory": 512
           }
@@ -452,7 +452,7 @@
         "ContainerDefinitions": [
           {
             "Essential": true,
-            "Image": "weaveworksdemos/catalogue",
+            "Image": "haroldmei/catalogue",
             "Name": "catalogue",
             "Memory": 512
           }
@@ -480,7 +480,7 @@
         "ContainerDefinitions": [
           {
             "Essential": true,
-            "Image": "weaveworksdemos/catalogue-db",
+            "Image": "haroldmei/catalogue-db",
             "Name": "catalogue-db",
             "Memory": 256,
             "Environment": [
@@ -518,7 +518,7 @@
         "ContainerDefinitions": [
           {
             "Essential": true,
-            "Image": "weaveworksdemos/login",
+            "Image": "haroldmei/login",
             "Name": "login",
             "Memory": 512
           }
@@ -546,7 +546,7 @@
         "ContainerDefinitions": [
           {
             "Essential": true,
-            "Image": "weaveworksdemos/user",
+            "Image": "haroldmei/user",
             "Name": "user",
             "Memory": 512
           }
@@ -574,7 +574,7 @@
         "ContainerDefinitions": [
           {
             "Essential": true,
-            "Image": "weaveworksdemos/user-db",
+            "Image": "haroldmei/user-db",
             "Name": "user-db",
             "Memory": 256
           }
@@ -630,7 +630,7 @@
         "ContainerDefinitions": [
           {
             "Essential": true,
-            "Image": "weaveworksdemos/orders",
+            "Image": "haroldmei/orders",
             "Name": "orders",
             "Memory": 512
           }
@@ -658,7 +658,7 @@
         "ContainerDefinitions": [
           {
             "Essential": true,
-            "Image": "weaveworksdemos/payment",
+            "Image": "haroldmei/payment",
             "Name": "payment",
             "Memory": 512
           }
@@ -686,7 +686,7 @@
         "ContainerDefinitions": [
           {
             "Essential": true,
-            "Image": "weaveworksdemos/queue-master",
+            "Image": "haroldmei/queue-master",
             "Name": "queue-master",
             "Memory": 256,
             "MountPoints": [
@@ -755,7 +755,7 @@
         "ContainerDefinitions": [
           {
             "Essential": true,
-            "Image": "weaveworksdemos/shipping",
+            "Image": "haroldmei/shipping",
             "Name": "shipping",
             "Memory": 512
           }

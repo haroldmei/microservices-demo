@@ -397,7 +397,7 @@ do_start() {
       "constraints": [["hostname", "UNIQUE"]],
       "container": {
         "docker": {
-          "image": "weaveworksdemos/edge-router",
+          "image": "haroldmei/edge-router",
           "network": "HOST",
           "parameters": [],
           "privileged": true
@@ -420,17 +420,17 @@ do_start() {
 
     launch_service carts-db      "echo ok"                                       mongo                               --no-shell
     launch_service orders-db    "echo ok"                                       mongo                               --no-shell
-    launch_service catalogue-db "echo ok"                                       weaveworksdemos/catalogue-db        --no-shell ", \\\"MYSQL_ALLOW_EMPTY_PASSWORD\\\": \\\"true\\\", \\\"MYSQL_DATABASE\\\": \\\"socksdb\\\""
-    launch_service user-db      "echo ok"                                       weaveworksdemos/user-db             --no-shell
+    launch_service catalogue-db "echo ok"                                       haroldmei/catalogue-db        --no-shell ", \\\"MYSQL_ALLOW_EMPTY_PASSWORD\\\": \\\"true\\\", \\\"MYSQL_DATABASE\\\": \\\"socksdb\\\""
+    launch_service user-db      "echo ok"                                       haroldmei/user-db             --no-shell
     launch_service rabbitmq     "echo ok"                                       rabbitmq:3.6.8                          --no-shell
 
-    launch_service shipping     "java -Xms64m -Xmx128m -XX:PermSize=32m -XX:MaxPermSize=64m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom -jar ./app.jar --port=80 --spring.rabbitmq.host=rabbitmq.mesos-executeinstance.weave.local"                     weaveworksdemos/shipping    --shell
-    launch_service orders       "java -Xms64m -Xmx128m -XX:PermSize=32m -XX:MaxPermSize=64m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom -jar ./app.jar --port=80 --db=orders-db.mesos-executeinstance.weave.local --domain=mesos-executeinstance.weave.local --logging.level.works.weave=DEBUG"    weaveworksdemos/orders   --shell
-    launch_service catalogue    "./app -port=80 -DSN=catalogue_user:default_password@tcp\(catalogue-db.mesos-executeinstance.weave.local:3306\)/socksdb"                                    weaveworksdemos/catalogue   --shell
-    launch_service carts        "java -Xms64m -Xmx128m -XX:PermSize=32m -XX:MaxPermSize=64m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom -jar ./app.jar --port=80 --db=carts-db.mesos-executeinstance.weave.local --logging.level.works.weave=DEBUG"      weaveworksdemos/carts       --shell
-    launch_service payment      "echo ok"                                                                                                                                                   weaveworksdemos/payment     --no-shell
-    launch_service front-end    "npm start -- --domain=mesos-executeinstance.weave.local"                                                                                                   weaveworksdemos/front-end   --shell
-    launch_service user         "./user -port=80 -link-domain=user.mesos-executeinstance.weave.local -mongo-host=user-db.mesos-executeinstance.weave.local:27017"                           weaveworksdemos/user        --shell
+    launch_service shipping     "java -Xms64m -Xmx128m -XX:PermSize=32m -XX:MaxPermSize=64m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom -jar ./app.jar --port=80 --spring.rabbitmq.host=rabbitmq.mesos-executeinstance.weave.local"                     haroldmei/shipping    --shell
+    launch_service orders       "java -Xms64m -Xmx128m -XX:PermSize=32m -XX:MaxPermSize=64m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom -jar ./app.jar --port=80 --db=orders-db.mesos-executeinstance.weave.local --domain=mesos-executeinstance.weave.local --logging.level.works.weave=DEBUG"    haroldmei/orders   --shell
+    launch_service catalogue    "./app -port=80 -DSN=catalogue_user:default_password@tcp\(catalogue-db.mesos-executeinstance.weave.local:3306\)/socksdb"                                    haroldmei/catalogue   --shell
+    launch_service carts        "java -Xms64m -Xmx128m -XX:PermSize=32m -XX:MaxPermSize=64m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom -jar ./app.jar --port=80 --db=carts-db.mesos-executeinstance.weave.local --logging.level.works.weave=DEBUG"      haroldmei/carts       --shell
+    launch_service payment      "echo ok"                                                                                                                                                   haroldmei/payment     --no-shell
+    launch_service front-end    "npm start -- --domain=mesos-executeinstance.weave.local"                                                                                                   haroldmei/front-end   --shell
+    launch_service user         "./user -port=80 -link-domain=user.mesos-executeinstance.weave.local -mongo-host=user-db.mesos-executeinstance.weave.local:27017"                           haroldmei/user        --shell
 }
 
 do_stop() {

@@ -256,7 +256,7 @@
             "Properties": {
                 "ContainerDefinitions": [{
                     "Essential": true,
-                    "Image": "weaveworksdemos/carts",
+                    "Image": "haroldmei/carts",
                     "Name": "carts",
  		    "LogConfiguration": {
                         "LogDriver": "awslogs",
@@ -292,7 +292,7 @@
             "Properties": {
                 "ContainerDefinitions": [{
                     "Essential": true,
-                    "Image": "weaveworksdemos/catalogue",
+                    "Image": "haroldmei/catalogue",
                     "Name": "catalogue",
                     "Memory": 32,
                     "Command": [
@@ -350,7 +350,7 @@
             "Properties": {
                 "ContainerDefinitions": [{
                     "Essential": true,
-                    "Image": "weaveworksdemos/front-end",
+                    "Image": "haroldmei/front-end",
                     "Name": "front-end",
  		    "LogConfiguration": {
                         "LogDriver": "awslogs",
@@ -430,7 +430,7 @@
             "Properties": {
                 "ContainerDefinitions": [{
                     "Essential": true,
-                    "Image": "weaveworksdemos/user",
+                    "Image": "haroldmei/user",
                     "Name": "user",
                     "LogConfiguration": {
                         "LogDriver": "awslogs",
@@ -470,7 +470,7 @@
             "Properties": {
                 "ContainerDefinitions": [{
                     "Essential": true,
-                    "Image": "weaveworksdemos/user-db",
+                    "Image": "haroldmei/user-db",
                     "Name": "user-db",
  		    "LogConfiguration": {
                         "LogDriver": "awslogs",
@@ -506,7 +506,7 @@
             "Properties": {
                 "ContainerDefinitions": [{
                     "Essential": true,
-                    "Image": "weaveworksdemos/orders-aws",
+                    "Image": "haroldmei/orders-aws",
                     "Name": "orders",
                     "LogConfiguration": {
                         "LogDriver": "awslogs",
@@ -556,7 +556,7 @@
             "Properties": {
                 "ContainerDefinitions": [{
                     "Essential": true,
-                    "Image": "weaveworksdemos/payment",
+                    "Image": "haroldmei/payment",
                     "Name": "payment",
  		    "LogConfiguration": {
                         "LogDriver": "awslogs",
@@ -596,7 +596,7 @@
             "Properties": {
                 "ContainerDefinitions": [{
                     "Essential": true,
-                    "Image": "weaveworksdemos/queue-master",
+                    "Image": "haroldmei/queue-master",
                     "Name": "queue-master",
  		    "LogConfiguration": {
                         "LogDriver": "awslogs",
@@ -677,7 +677,7 @@
             "Properties": {
                 "ContainerDefinitions": [{
                     "Essential": true,
-                    "Image": "weaveworksdemos/shipping",
+                    "Image": "haroldmei/shipping",
                     "Name": "shipping",
  		    "LogConfiguration": {
                         "LogDriver": "awslogs",

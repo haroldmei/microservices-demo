@@ -2,7 +2,7 @@
   "jobs": {
     "job::${NAMESPACE}::front-end": {
       "docker": {
-        "image": "weaveworksdemos/front-end:master-ac9ca707"
+        "image": "haroldmei/front-end:master-ac9ca707"
       },
       "restart_mode": "yes",
       "state": "ready",
@@ -35,7 +35,7 @@
     },
     "job::${NAMESPACE}::catalogue": {
       "docker": {
-        "image": "weaveworksdemos/catalogue:0.3.5"
+        "image": "haroldmei/catalogue:0.3.5"
       },
       "restart_mode": "yes",
       "state": "ready",
@@ -61,7 +61,7 @@
     },
     "job::${NAMESPACE}::catalogue-db": {
       "docker": {
-        "image": "weaveworksdemos/catalogue-db:0.3.5"
+        "image": "haroldmei/catalogue-db:0.3.5"
       },
       "restart_mode": "yes",
       "state": "ready",
@@ -78,7 +78,7 @@
     },
     "job::${NAMESPACE}::carts": {
       "docker": {
-        "image": "weaveworksdemos/carts:0.4.8"
+        "image": "haroldmei/carts:0.4.8"
       },
       "restart_mode": "yes",
       "state": "ready",
@@ -121,7 +121,7 @@
     },
     "job::${NAMESPACE}::orders": {
       "docker": {
-        "image": "weaveworksdemos/orders:0.4.7"
+        "image": "haroldmei/orders:0.4.7"
       },
       "restart_mode": "yes",
       "state": "ready",
@@ -165,7 +165,7 @@
     },
     "job::${NAMESPACE}::user": {
       "docker": {
-        "image": "weaveworksdemos/user:master-5e88df65"
+        "image": "haroldmei/user:master-5e88df65"
       },
       "restart_mode": "yes",
       "state": "ready",
@@ -193,7 +193,7 @@
     },
     "job::${NAMESPACE}::user-db": {
       "docker": {
-        "image": "weaveworksdemos/user-db:master-5e88df65"
+        "image": "haroldmei/user-db:master-5e88df65"
       },
       "restart_mode": "yes",
       "state": "ready",
@@ -209,7 +209,7 @@
     },
     "job::${NAMESPACE}::payment": {
       "docker": {
-        "image": "weaveworksdemos/payment:0.4.3"
+        "image": "haroldmei/payment:0.4.3"
       },
       "restart_mode": "yes",
       "state": "ready",
@@ -234,7 +234,7 @@
     },
     "job::${NAMESPACE}::shipping": {
       "docker": {
-        "image": "weaveworksdemos/shipping:0.4.8"
+        "image": "haroldmei/shipping:0.4.8"
       },
       "restart_mode": "yes",
       "state": "ready",
@@ -273,7 +273,7 @@
     },
     "job::${NAMESPACE}::queue-master": {
       "docker": {
-        "image": "weaveworksdemos/queue-master:master-48d63b59"
+        "image": "haroldmei/queue-master:master-48d63b59"
       },
       "restart_mode": "yes",
       "state": "ready",
@@ -324,7 +324,7 @@
     },
     "job::${NAMESPACE}::user-sim": {
       "docker": {
-        "image": "weaveworksdemos/load-test:master-384fa3c5"
+        "image": "haroldmei/load-test:master-384fa3c5"
       },
       "restart_mode": "yes",
       "state": "ready",

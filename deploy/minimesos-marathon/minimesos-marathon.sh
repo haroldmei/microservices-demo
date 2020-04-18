@@ -3,7 +3,7 @@
 version="1.0.0"
 SCRIPT_DIR=`dirname "$0"`
 SCRIPT_NAME=`basename "$0"`
-IMAGES=("weaveworksdemos/shipping" "weaveworksdemos/orders" "weaveworksdemos/catalogue" "weaveworksdemos/user" "weaveworksdemos/carts" "weaveworksdemos/payment" "weaveworksdemos/catalogue-db" "weaveworksdemos/user-db" "weaveworksdemos/front-end" "weaveworksdemos/edge-router")
+IMAGES=("haroldmei/shipping" "haroldmei/orders" "haroldmei/catalogue" "haroldmei/user" "haroldmei/carts" "haroldmei/payment" "haroldmei/catalogue-db" "haroldmei/user-db" "haroldmei/front-end" "haroldmei/edge-router")
 MARATHON_FILE=../mesos-marathon/marathon.json
 if [[ "$OSTYPE" == "darwin"* ]]; then
     DOCKER_CMD=docker

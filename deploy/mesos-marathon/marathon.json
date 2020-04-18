@@ -11,7 +11,7 @@
           "container": {
             "type": "DOCKER",
             "docker": {
-              "image": "weaveworksdemos/user-db",
+              "image": "haroldmei/user-db",
               "network": "BRIDGE",
               "parameters": [
                 {
@@ -83,7 +83,7 @@
           "container": {
             "type": "DOCKER",
             "docker": {
-              "image": "weaveworksdemos/catalogue-db",
+              "image": "haroldmei/catalogue-db",
               "network": "BRIDGE",
               "parameters": [
                 {
@@ -113,7 +113,7 @@
           "container": {
             "type": "DOCKER",
             "docker": {
-              "image": "weaveworksdemos/user:latest",
+              "image": "haroldmei/user:latest",
               "network": "BRIDGE",
               "parameters": [
                 {
@@ -131,7 +131,7 @@
           "container": {
             "type": "DOCKER",
             "docker": {
-              "image": "weaveworksdemos/carts:latest",
+              "image": "haroldmei/carts:latest",
               "network": "BRIDGE",
               "parameters": [
                 {
@@ -152,7 +152,7 @@
           "container": {
             "type": "DOCKER",
             "docker": {
-              "image": "weaveworksdemos/orders:latest",
+              "image": "haroldmei/orders:latest",
               "network": "BRIDGE",
               "parameters": [
                 {
@@ -173,7 +173,7 @@
           "container": {
             "type": "DOCKER",
             "docker": {
-              "image": "weaveworksdemos/payment:latest",
+              "image": "haroldmei/payment:latest",
               "network": "BRIDGE",
               "parameters": [
                 {
@@ -191,7 +191,7 @@
           "container": {
             "type": "DOCKER",
             "docker": {
-              "image": "weaveworksdemos/shipping:latest",
+              "image": "haroldmei/shipping:latest",
               "network": "BRIDGE",
               "parameters": [
                 {
@@ -212,7 +212,7 @@
           "container": {
             "type": "DOCKER",
             "docker": {
-              "image": "weaveworksdemos/queue-master:latest",
+              "image": "haroldmei/queue-master:latest",
               "network": "BRIDGE",
               "parameters": [
                 {
@@ -231,7 +231,7 @@
           "container": {
             "type": "DOCKER",
             "docker": {
-              "image": "weaveworksdemos/catalogue:latest",
+              "image": "haroldmei/catalogue:latest",
               "network": "BRIDGE",
               "parameters": [
                 {
@@ -258,7 +258,7 @@
           "container": {
             "type": "DOCKER",
             "docker": {
-              "image": "weaveworksdemos/front-end:latest",
+              "image": "haroldmei/front-end:latest",
               "network": "BRIDGE",
               "parameters": [
                 {
@@ -291,7 +291,7 @@
           ],
           "container": {
             "docker": {
-              "image": "weaveworksdemos/edge-router:latest",
+              "image": "haroldmei/edge-router:latest",
               "network": "BRIDGE",
               "portMappings": [
                 {

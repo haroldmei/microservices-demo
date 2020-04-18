@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: shipping
-        image: weaveworksdemos/shipping:0.4.8
+        image: haroldmei/shipping:0.4.8
         env:
         {{- if .Values.zipkin.enabled }}
          - name: ZIPKIN

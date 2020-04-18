@@ -21,7 +21,7 @@ sudo curl -L git.io/weave -o /usr/local/bin/weave
 sudo chmod +x /usr/local/bin/weave
 
 # Clone repo to get deployment scripts
-git clone https://github.com/microservices-demo/microservices-demo.git
+git clone https://github.com/haroldmei/microservices-demo.git
 cd microservices-demo
 
 cd deploy/minimesos-marathon

@@ -27,7 +27,7 @@ job "weavedemo" {
       driver = "docker"
 
       config {
-        image = "weaveworksdemos/front-end"
+        image = "haroldmei/front-end"
         hostname = "front-end.weave.local"
         network_mode = "external"
         dns_servers = ["172.17.0.1"]
@@ -54,7 +54,7 @@ job "weavedemo" {
       driver = "docker"
 
       config {
-        image = "weaveworksdemos/edge-router"
+        image = "haroldmei/edge-router"
         hostname = "edge-router.weave.local"
         network_mode = "external"
         dns_servers = ["172.17.0.1"]
@@ -102,7 +102,7 @@ job "weavedemo" {
       driver = "docker"
 
       config {
-        image = "weaveworksdemos/user"
+        image = "haroldmei/user"
         hostname = "user.weave.local"
         network_mode = "secure"
         dns_servers = ["172.17.0.1"]
@@ -128,7 +128,7 @@ job "weavedemo" {
       driver = "docker"
 
       config {
-        image = "weaveworksdemos/user-db"
+        image = "haroldmei/user-db"
         hostname = "user-db.weave.local"
         network_mode = "secure"
       }
@@ -164,7 +164,7 @@ job "weavedemo" {
       driver = "docker"
 
       config {
-        image = "weaveworksdemos/catalogue"
+        image = "haroldmei/catalogue"
         hostname = "catalogue.weave.local"
         network_mode = "external"
         dns_servers = ["172.17.0.1"]
@@ -190,7 +190,7 @@ job "weavedemo" {
       driver = "docker"
 
       config {
-        image = "weaveworksdemos/catalogue-db"
+        image = "haroldmei/catalogue-db"
         hostname = "catalogue-db.weave.local"
         network_mode = "external"
       }
@@ -233,7 +233,7 @@ job "weavedemo" {
       driver = "docker"
 
       config {
-        image = "weaveworksdemos/carts"
+        image = "haroldmei/carts"
         hostname = "carts.weave.local"
         network_mode = "internal"
         dns_servers = ["172.17.0.1"]
@@ -299,7 +299,7 @@ job "weavedemo" {
       driver = "docker"
 
       config {
-        image = "weaveworksdemos/shipping"
+        image = "haroldmei/shipping"
         hostname = "shipping.weave.local"
         network_mode = "backoffice"
         dns_servers = ["172.17.0.1"]
@@ -341,7 +341,7 @@ job "weavedemo" {
       driver = "docker"
 
       config {
-        image = "weaveworksdemos/payment"
+        image = "haroldmei/payment"
         hostname = "payment.weave.local"
         network_mode = "secure"
         dns_servers = ["172.17.0.1"]
@@ -380,7 +380,7 @@ job "weavedemo" {
       driver = "docker"
 
       config {
-        image = "weaveworksdemos/orders"
+        image = "haroldmei/orders"
         hostname = "orders.weave.local"
         network_mode = "internal"
         dns_servers = ["172.17.0.1"]
@@ -447,7 +447,7 @@ job "weavedemo" {
 
       config {
         command = "/usr/bin/docker"
-        args = ["run", "--name", "queue-master-${NOMAD_ALLOC_ID}", "--volume", "/var/run/docker.sock:/var/run/docker.sock", "--restart", "always", "--dns", "172.17.0.1", "--dns-search", "weave.local.", "--net", "backoffice", "--hostname", "queue-master.weave.local", "weaveworksdemos/queue-master"]
+        args = ["run", "--name", "queue-master-${NOMAD_ALLOC_ID}", "--volume", "/var/run/docker.sock:/var/run/docker.sock", "--restart", "always", "--dns", "172.17.0.1", "--dns-search", "weave.local.", "--net", "backoffice", "--hostname", "queue-master.weave.local", "haroldmei/queue-master"]
       }
 
       service {
