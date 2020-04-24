@@ -5,15 +5,10 @@ SCRIPT_DIR=`dirname "$0"`
 SCRIPT_NAME=`basename "$0"`
 IMAGES=("haroldmei/shipping" "haroldmei/orders" "haroldmei/catalogue" "haroldmei/user" "haroldmei/carts" "haroldmei/payment" "haroldmei/catalogue-db" "haroldmei/user-db" "haroldmei/front-end" "haroldmei/edge-router")
 MARATHON_FILE=../mesos-marathon/marathon.json
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    DOCKER_CMD=docker
-    WEAVE_CMD=weave
-    MINIMESOS_CMD=minimesos
-else
-    DOCKER_CMD="sudo docker"
-    WEAVE_CMD="sudo weave"
-    MINIMESOS_CMD="sudo minimesos"
-fi
+
+DOCKER_CMD=docker
+WEAVE_CMD=weave
+MINIMESOS_CMD=minimesos
 
 ############## Begin Utilities ###################
 function trapCleanup() {

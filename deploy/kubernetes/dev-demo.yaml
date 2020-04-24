@@ -68,7 +68,7 @@ spec:
     spec:
       containers:
       - name: carts
-        image: haroldmei/carts:latest
+        image: k8smaster:5000/haroldmei/carts:latest
         ports:
          - containerPort: 80
         env:
@@ -126,7 +126,7 @@ spec:
     spec:
       containers:
       - name: catalogue-db
-        image: haroldmei/catalogue-db:latest
+        image: k8smaster:5000/haroldmei/catalogue-db:latest
         env:
           - name: MYSQL_ROOT_PASSWORD
             value: fake_password
@@ -169,7 +169,7 @@ spec:
     spec:
       containers:
       - name: catalogue
-        image: haroldmei/catalogue:latest
+        image: k8smaster:5000/haroldmei/catalogue:latest
         ports:
         - containerPort: 80
         securityContext:
@@ -213,7 +213,7 @@ spec:
     spec:
       containers:
       - name: front-end
-        image: haroldmei/front-end:latest
+        image: k8smaster:5000/haroldmei/front-end:latest
         resources:
           requests:
             cpu: 100m
@@ -316,7 +316,7 @@ spec:
     spec:
       containers:
       - name: orders
-        image: haroldmei/orders:latest
+        image: k8smaster:5000/haroldmei/orders:latest
         env:
          - name: ZIPKIN
            value: zipkin.jaeger.svc.cluster.local
@@ -374,7 +374,7 @@ spec:
     spec:
       containers:
       - name: payment
-        image: haroldmei/payment:latest
+        image: k8smaster:5000/haroldmei/payment:latest
         ports:
         - containerPort: 80
         securityContext:
@@ -420,7 +420,7 @@ spec:
     spec:
       containers:
       - name: queue-master
-        image: haroldmei/queue-master:latest
+        image: k8smaster:5000/haroldmei/queue-master:latest
         ports:
         - containerPort: 80
       nodeSelector:
@@ -506,7 +506,7 @@ spec:
     spec:
       containers:
       - name: shipping
-        image: haroldmei/shipping:latest
+        image: k8smaster:5000/haroldmei/shipping:latest
         env:
          - name: ZIPKIN
            value: zipkin.jaeger.svc.cluster.local
@@ -564,7 +564,7 @@ spec:
     spec:
       containers:
       - name: user-db
-        image: haroldmei/user-db:latest
+        image: k8smaster:5000/haroldmei/user-db:latest
         ports:
         - name: mongo
           containerPort: 27017
@@ -618,7 +618,7 @@ spec:
     spec:
       containers:
       - name: user
-        image: haroldmei/user:latest
+        image: k8smaster:5000/haroldmei/user:latest
         ports:
         - containerPort: 80
         env:
